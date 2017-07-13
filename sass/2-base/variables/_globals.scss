@@ -1,0 +1,64 @@
+///////////////////
+//		colors
+//////////////////
+
+
+
+///////////////////
+//	typography
+///////////////////
+$base-font-family: null; // <> //
+$base-heading-font-family: $base-font-family;
+
+///////////////////
+//	line-height
+///////////////////
+$base-line-height: 1.5;
+$base-heading-line-height: 1.2;
+
+///////////////////
+//	borders
+///////////////////
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+///////////////////
+//	background color
+///////////////////
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+
+///////////////////
+//		buttons
+///////////////////
+$base-btn-bgcolor: null;
+$base-btn-padding: null;
+$base-btn-font-size: null;
+$base-btn-border-width: null;
+
+///////////////////
+//	other-sizes
+///////////////////
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
+$base-z-index: 0;
+$small-spacing: $base-spacing / 2;
+
+///////////////////
+//	font colors
+///////////////////
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
