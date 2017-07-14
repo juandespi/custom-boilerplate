@@ -1,0 +1,26 @@
+@import 'colors';
+// @import 'fonts';
+// @import 'images';
+// @import 'typography';
+// @import 'globals';
+
+// Typography
+$base-font-family: $georgia;
+$heading-font-family: $base-font-family;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+
+
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
