@@ -1,6 +1,82 @@
-$primary-color: #177E89;
-$accent-color: #DB3A34;
-$text-color: #323031;
-$bg-color: #F6F6F8;
-$link-color: $accent-color;
-$selection-color: #FFC857;
+// $color-primary: #E8E759,
+// $color-secondary: #CCCB1E,
+// $color-tertiary: #4444E4,
+// $color-accent: #4444E4,
+// $color-inactive: #8E8EEC,
+// $color-link: #1818A5,
+// $color-hover: #0F0F6C,
+// $color-active: #080840,
+// $color-focus: #59E8B3
+// Colors
+$blue: #1565c0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+
+/////////////////
+//  theme-colors
+/////////////////
+$primary-color    :  null;
+$secondary-color  :  null;
+$tertiary-color   :  null;
+$accent-color     :  null;
+
+
+/////////////////
+//  font-colors
+/////////////////
+
+///////////////////////
+//  typography-colors
+///////////////////////
+$link-color      :  null;
+
+///////////////////
+//  button-colors
+///////////////////
+
+
+/////////////////
+//  form-colors
+/////////////////
+
+/////////////////
+//  list-colors
+/////////////////
+
+/////////////////
+//  table-colors
+/////////////////
+// <> general table styles
+$tbl-bg         :  null;
+$tbl-txt        :  null;
+$tbl-border     :  null;
+$tbl-active     :  null;
+$tbl-active-txt :  null;
+$tbl-hover      :  null;
+$tbl-hover-txt  :  null;
+
+$th-bg          :  null;
+$th-txt         :  null;
+$th-border      :  null;
+$th-active      :  null;
+$th-active-txt  :  null;
+$th-hover       :  null;
+$th-hover-txt   :  null;
+
+$td-bg          :  null;
+$td-txt         :  null;
+$td-border      :  null;
+$td-active      :  null;
+$td-active-txt  :  null;
+$td-hover       :  null;
+$td-hover-txt   :  null;
+
+/////////////////
+//  header-colors
+/////////////////
+
+/////////////////
+//  footer-colors
+/////////////////
