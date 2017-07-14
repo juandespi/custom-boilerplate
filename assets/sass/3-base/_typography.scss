@@ -3,7 +3,7 @@
 //////////////////
 html {
   color: $base-font-color;
-  font-family: Roboto Slab;
+  font-family: $base-font-family;
   font-size: 100%;
   line-height: $base-line-height;
 }
@@ -27,22 +27,22 @@ p {
 a {
   color: $link-txt;
   text-decoration-skip: ink;
-  transition: color $base-duration $base-timing;
-
+  @include transition(color 1s ease-out);
+  
   &:hover {
     color: shade($link-txt, 25%);
   }
 
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    // outline: $focus-outline;
+    // outline-offset: $focus-outline-offset;
   }
   &:visited { }
   &:active { }
 }
 
 hr {
-  border-bottom: $base-border;
+  border-bottom: #333 solid 2px;
   border-left: 0;
   border-right: 0;
   border-top: 0;

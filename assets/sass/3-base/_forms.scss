@@ -38,7 +38,6 @@ textarea {
   box-sizing: border-box;
   margin-bottom: $small-spacing;
   padding: $base-spacing / 3;
-  // transition: border-color $base-duration $base-timing;
   @include transition(all .5s $quad-out);
   width: 100%;
 
@@ -94,7 +93,7 @@ select {
 [type="file"],
 select {
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    // outline: $focus-outline;
+    // outline-offset: $focus-outline-offset;
   }
 }

@@ -1,9 +1,7 @@
 // >> autofill fix
 @mixin autofillfix($name) {
   &:-webkit-autofill {
-    -webkit-animation-name: $name;
-    -o-animation-name: $name;
-    animation-name: $name;
+    @include animation-name($name);
     @include prefix(animation-fill-mode, both);
   }
 
