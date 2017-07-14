@@ -3,7 +3,7 @@
 //////////////////
 html {
   color: $base-font-color;
-  font-family: $base-font-family;
+  font-family: Roboto Slab;
   font-size: 100%;
   line-height: $base-line-height;
 }
@@ -25,12 +25,12 @@ p {
 }
 
 a {
-  color: $action-color;
+  color: $link-txt;
   text-decoration-skip: ink;
   transition: color $base-duration $base-timing;
 
   &:hover {
-    color: shade($action-color, 25%);
+    color: shade($link-txt, 25%);
   }
 
   &:focus {

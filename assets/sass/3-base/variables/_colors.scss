@@ -14,7 +14,7 @@ $medium-gray: #999;
 $light-gray: #ddd;
 // Font Colors
 
-$action-color: $blue;
+// $action-color: $blue;
 
 // Border
 $base-border-color: $light-gray;
@@ -45,7 +45,7 @@ $base-font-color: #333;
 //  typography-colors
 ////////////////////////////////////////////////////////////////////////////////
 $link-bg            :  transparent;
-$link-txt           :  transparent;
+$link-txt           :  #1565c0;
 $link-border        :  transparent;
 $link-hover-bg      :  transparent;
 $link-hover-border  :  red;
@@ -62,10 +62,10 @@ $btn-bg-hover: lighten($btn-bg, 5%);
 //  form-colors
 ////////////////////////////////////////////////////////////////////////////////
 $_form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$_form-box-shadow-focus: $_form-box-shadow, 0 0 5px rgba($action-color, 0.7);
+$_form-box-shadow-focus: $_form-box-shadow, 0 0 5px rgba(#1565c0, 0.7);
 
 // Focus
-$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-color: transparentize(#1565c0, 0.4);
 $focus-outline-width: 3px;
 $focus-outline: $focus-outline-width solid $focus-outline-color;
 $focus-outline-offset: 2px;
