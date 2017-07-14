@@ -37,6 +37,8 @@ a {
     outline: $focus-outline;
     outline-offset: $focus-outline-offset;
   }
+  &:visited { }
+  &:active { }
 }
 
 hr {
