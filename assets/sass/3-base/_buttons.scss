@@ -1,5 +1,5 @@
 #{$all-buttons} {
-  appearance: none;
+  @include appearance(none);
   background-color: $btn-bg;
   border: 0;
   border-radius: $base-border-radius;
@@ -15,10 +15,9 @@
   @include transition(background-color 1s ease-out);
   text-align: center;
   text-decoration: none;
-  user-select: none;
+  @include user-select(none);
   vertical-align: middle;
   white-space: nowrap;
-
   &:hover {
     background-color: $btn-bg-hover;
     color: contrast-switch($btn-bg-hover);

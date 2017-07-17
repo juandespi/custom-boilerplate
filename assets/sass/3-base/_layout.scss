@@ -2,13 +2,13 @@
 //		layout
 //////////////////
 html {
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  @include box-sizing(inherit);
 }
 
 html,

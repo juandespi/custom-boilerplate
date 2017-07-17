@@ -38,7 +38,7 @@ textarea {
   box-sizing: border-box;
   margin-bottom: $small-spacing;
   padding: $base-spacing / 3;
-  @include transition(all .5s $quad-out);
+  @include transition(all .5s $ease-out-quad);
   width: 100%;
 
   &:hover {
