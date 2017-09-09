@@ -31,28 +31,27 @@
 //  convert to rem
 ////////////////////////////////////////////////////////////////////////////////
 @mixin rem($property, $values...) {
-    $n: length($values);
-    $i: 1;
+  $n: length($values);
+  $i: 1;
 
-    $pxlist: ();
-    $remlist: ();
+  $pxlist: ();
+  $remlist: ();
 
-    @while $i <= $n {
-        $itemVal: (nth($values, $i));
-        @if $itemVal != "auto"{
-            $pxlist: append($pxlist, $itemVal + px);
-            $remlist: append($remlist, ($itemVal / 10) + rem);
-        }@else{
-            $pxlist: append($pxlist, auto);
-            $remlist: append($remlist, auto);
-        }
-
-
-        $i: $i + 1;
+  @while $i <= $n {
+    $itemVal: (nth($values, $i));
+    @if $itemVal != "auto"{
+      $pxlist: append($pxlist, $itemVal + px);
+      $remlist: append($remlist, ($itemVal / 10) + rem);
+    } @else {
+      $pxlist: append($pxlist, auto);
+      $remlist: append($remlist, auto);
     }
 
-    #{$property}: $pxlist;
-    #{$property}: $remlist;
+    $i: $i + 1;
+  }
+
+  #{$property}: $pxlist;
+  #{$property}: $remlist;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -76,9 +75,7 @@
 //  circle radius
 ////////////////////////////////////////////////////////////////////////////////
 @mixin circle {
-  -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
-          border-radius: 50%;
+  @include border-radius(50%);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -121,4 +118,38 @@
 @mixin coverer {
   @include position(absolute, 0 null null 0);
   @include size(100%);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//  absolute block
+////////////////////////////////////////////////////////////////////////////////
+@mixin absolute-block {
+  @include position(absolute, 0 0 0 0);
+  z-index: 1;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//  no bullet
+////////////////////////////////////////////////////////////////////////////////
+@mixin no-bullet {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+@mixin no-bullets {
+  list-style: none;
+  li { @include no-bullet; }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//  custom-bullets
+////////////////////////////////////////////////////////////////////////////////
+@mixin custom-bullets($bullet-icon, $width: image-width($bullet-icon), $height: image-height($bullet-icon), $line-height: 18px, $padding: 14px) {
+  margin-left: 0;
+  li {
+    padding-left: $padding;
+    background: url($bullet-icon) no-repeat ($padding - $width) / 2 ($line-height - $height) / 2;
+    list-style-type: none;
+  }
 }
