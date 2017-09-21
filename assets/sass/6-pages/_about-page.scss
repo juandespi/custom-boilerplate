@@ -1,6 +1,5 @@
 .about-page{
-  ul {
-    @include custom-bullets('../apple-touch-icon.png', 10px, 15px);
-    li {  }
+  @include ie-fix() {
+    background: red;
   }
 }
