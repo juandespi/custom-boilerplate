@@ -34,16 +34,16 @@
   $n: length($values);
   $i: 1;
 
-  $pxlist: ();
+  $pxlist : ();
   $remlist: ();
 
   @while $i <= $n {
     $itemVal: (nth($values, $i));
     @if $itemVal != "auto"{
-      $pxlist: append($pxlist, $itemVal + px);
+      $pxlist : append($pxlist, $itemVal + px);
       $remlist: append($remlist, ($itemVal / 10) + rem);
     } @else {
-      $pxlist: append($pxlist, auto);
+      $pxlist : append($pxlist, auto);
       $remlist: append($remlist, auto);
     }
 
@@ -58,9 +58,9 @@
 //  opacity
 ////////////////////////////////////////////////////////////////////////////////
 @mixin opacity($opacity) {
-  opacity: $opacity;
+  opacity    : $opacity;
   $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
+  filter     : alpha(opacity=$opacity-ie); //IE8
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -82,7 +82,7 @@
 //  width && height
 ////////////////////////////////////////////////////////////////////////////////
 @mixin wh($w: null, $h: null) {
-  width: $w;
+  width : $w;
   height: $h;
 }
 
@@ -100,14 +100,14 @@
 @mixin centerer2($horizontal: true, $vertical: true) {
   position: absolute;
   @if ($horizontal and $vertical) {
-    top: 50%;
-    left: 50%;
+    top   : 50%;
+    left  : 50%;
     @include transform(translate(-50%, -50%));
   } @else if ($horizontal) {
-    left: 50%;
+    left  : 50%;
     @include transform(translate(-50%, 0));
   } @else if ($vertical) {
-    top: 50%;
+    top   : 50%;
     @include transform(translate(0, -50%));
   }
 }
@@ -133,8 +133,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 @mixin no-bullet {
   list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
+  list-style-type : none;
+  margin-left     : 0;
 }
 
 @mixin no-bullets {
@@ -148,8 +148,8 @@
 @mixin custom-bullets($bullet-icon, $width: image-width($bullet-icon), $height: image-height($bullet-icon), $line-height: 18px, $padding: 14px) {
   margin-left: 0;
   li {
-    padding-left: $padding;
-    background: url($bullet-icon) no-repeat ($padding - $width) / 2 ($line-height - $height) / 2;
+    padding-left   : $padding;
+    background     : url($bullet-icon) no-repeat ($padding - $width) / 2 ($line-height - $height) / 2;
     list-style-type: none;
   }
 }
